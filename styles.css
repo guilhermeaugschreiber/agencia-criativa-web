@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-height: 100%;
+}
+body{
+    min-height: 100%;
+    background-color: black;
+    display: grid;
+    width: 100%;
+}
+
+/* header e menu */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b9b9b9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 0 2rem;
+
+}
+
+.top-menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1rem;
+    @media (max-width: 600px) {
+        font-size: 0.6rem;
+    }
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('fontes/Questrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    font-family: 'Questrial';
+}
+
+/* banner e ajustes  */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d9d9d9;
+    padding: 10vh 10vw;
+    gap: 1rem;
+}
+
+
+
+/* seção about e ajustes */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9d9d9;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+
+
+/* seção servicos e ajustes */
+
+.servicosContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    flex-wrap: wrap;
+    row-gap: 10vh;
+}
+
+.servicosContent {
+    width: fit-content;
+    border: solid 1px #d9d9d9;
+    border-radius: 15px;
+    padding: 2rem 2rem 5rem 2rem;
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    
+}
+
+.servicosContentTitle {
+    width: 18vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    @media (max-width: 600px) {
+        width: 60vw;
+    }
+}
+
+
+
+
+/* seção relatos e ajustes */
+
+.depoimentoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentoContent {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 15px;
+    width: 70vw;
+    height: 35vh;
+    padding: 5vw 5vw 2vw 5vw;
+    color: #d9d9d9;
+    @media (max-width: 600px) {
+        padding: 5vh;
+        height: 60vh;
+    }
+}
+
+.depoimentoText {
+    padding: 4vh;
+    transition: all 0.5s ease-out;
+}
+
+.botaoDepoimentoContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botaoDepoimento {
+    height: 10px;
+    width: 10px;
+    border: solid 1px #d9d9d9;
+    border-radius: 10px;
+    background-color: black;
+}
+.botaoDepoimento:hover{
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.botaoSelecionado {
+    background-color: #d9d9d9;
+}
+
+/* seção Contatos */
+
+.contatoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d9d9d9;
+    gap: 10vh;
+    padding: 1rem;
+}
+
+.infoContatoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.formularioContato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formularioContato input {
+    width: 30vw;
+    height: 3vh;
+    @media (max-width: 600px) {
+        width: 70vw;
+    }
+    
+}
+
+.formularioContato button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 3vh;
+    background-color: black;
+    color: #d9d9d9;
+    border: solid 1px #d9d9d9;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+/* fontes */
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    @media (max-width: 600px) {
+        font-size: 3rem;;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+
+}
+
+.banner p {
+    font-size: 1rem;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.servicosContent h3 {
+    word-wrap: break-word;
+    min-width: 0;
+    @media (max-width: 600px) {
+        word-wrap: normal;
+        font-size: 1.5rem;
+    }
+}
+
+.servicosContent li {
+    font-size: 1.5rem;
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
+}
+
+
+.depoimentoContent h4{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.depoimentoContent p{
+    font-size: 1.5rem;
+    font-style: italic;
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
+}
+
+.infoContatoContainer p{
+    font-size: 1.5rem;
+    @media (max-width: 600px) {
+        font-size: 1rem;;
+    }
+}
+
+.formularioContato {
+    font-size: 1rem;
+}
+
+.formularioContato button {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}

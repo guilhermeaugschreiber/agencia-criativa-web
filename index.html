@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagens/logo_acw_mobile.png" srcset="imagens/logo_acw_mobile.png 280w, imagens/logo_acw.png 640w" sizes="(max-width: 480px) 280px, (max-width: 768px) 480px, 640px">
+
+        <nav>
+            <ul class="top-menu">
+                <li>Home</li>
+                <li>Sobre nós</li>
+                <li>Serviços</li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        
+        <section class="banner">
+            
+            <h1>Design que Inspira e Conecta.</h1>
+            <p>Somos uma agência digital dinâmica e apaixonada por transformar ideias em soluções digitais impactantes.</p>
+            
+        </section>
+        
+        <section class="about">
+            <p> Acreditamos na inovação constante e na busca por resultados tangíveis para nossos clientes. Nossa equipe multidisciplinar combina criatividade, estratégia e tecnologia de ponta para entregar projetos que superam expectativas e impulsionam o crescimento.</p>
+        </section>     
+        
+        <section class="servicosContainer">
+            
+            <div class="servicosContent">
+                
+                <div class="servicosContentTitle">
+                    <h3>Design Gráfico</h3>
+                    <img src="imagens/icone_design_grafico.png" alt="icone design">
+                </div>
+                
+                <div class="servicosContentList">
+                    <ul>
+                        <li>Identidade Visual</li> 
+                        <li>Materiais de Marketing</li> 
+                        <li>Layouts</li> 
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="servicosContent">
+                
+                <div class="servicosContentTitle">
+                    <h3>Desenvolvimento web</h3>
+                    <img src="imagens/icone_desenvolvimento_web.png" alt="icone design">
+                </div>
+                
+                <div class="servicosContentList">
+                    <ul>
+                        <li>Websites</li> 
+                        <li>Sistemas Personalizados</li> 
+                        <li>Soluções responsivas</li> 
+                        <li>APIs</li> 
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="servicosContent">
+                
+                <div class="servicosContentTitle">
+                    <h3>Branding</h3>
+                    <img src="imagens/icone_branding.png" alt="icone design">
+                </div>
+                
+                <div class="servicosContentList">
+                    <ul>
+                        <li>Marca</li> 
+                        <li>Estratégia</li> 
+                        <li>Comunicação</li> 
+                        <li>Reputação</li> 
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <section class="depoimentoContainer">
+            
+            <div class="depoimentoContent">
+                <div class="depoimentoContentTitle" id="title1">
+                    <h3>João Gomes</h3>
+                    <h4>Sorriso Radiante</h4>
+                </div>
+                <div class="depoimentoContentTitle hidden" id="title2">
+                    <h3>Maria Silva</h3>
+                    <h4>Estilo Chic</h4>
+                </div>
+                <div class="depoimentoContentTitle hidden" id="title3">
+                    <h3>Carlos Oliveira</h3>
+                    <h4>TechSoluções Inovadoras</h4>
+                </div>
+                <div class="depoimentoText" id="depoimento1">
+                    <p>"A Criativa Web transformou nossa presença online! Nosso novo site e identidade visual, refletem a qualidade da Sorriso Radiante. Recebemos muitos elogios e vimos um aumento nos agendamentos. Recomendo a Criativa pela criatividade e resultados!"</p>
+                </div>
+                <div class="depoimentoText hidden" id="depoimento2">
+                    <p>"A Criativa Web entendeu perfeitamente a Estilo Chic! O novo logo e posts nas redes sociais ficaram incríveis. Nossos clientes adoraram a nova imagem, com aumento no engajamento e vendas. Equipe talentosa e atenciosa!"</p>
+                </div>
+                <div class="depoimentoText hidden" id="depoimento3">
+                    <p>"A Criativa Web entregou um website moderno e funcional para a TechSoluções, superando expectativas. Navegação fácil, design profissional e ótimo suporte técnico. Recomendamos!"</p>
+                </div>
+                <div class="botaoDepoimentoContainer">
+                    <button class="botaoDepoimento botaoSelecionado" id="botaoDepoimento1"></button>
+                    <button class="botaoDepoimento" id="botaoDepoimento2"></button>
+                    <button class="botaoDepoimento" id="botaoDepoimento3"></button>
+                </div>
+
+            </div>
+            
+        </section>
+        
+        <section class="contatoContainer" id="contato">
+            <div class="infoContatoContainer">
+                <h2>Entre em contato</h2>
+                <p>A Werb Criativa, situada no coração vibrante de Blumenau, Santa Catarina, convida você para um bate-papo inspirador:</p>
+                <h2>(47) 3333-9876</h2>
+                <p>Rua XV de Novembro, 1500 - Sala 305</p>
+                <p>Centro - Blumenau - SC - 89010-000</p>
+            </div>
+
+            <form action="submit" class="formularioContato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+                <label for="email">E-mail</label>
+                <input type="text" id="email">
+                <label for="telefone">Telefone</label>
+                <input type="number" id="telefone">
+                <button>Entre em contato</button>                
+            </form>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
